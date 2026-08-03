@@ -1,0 +1,26 @@
+Basic Implementation or RRULE (RFC5545)
+Made from necessity, as the MVN repo became impossible to search!
+No AI was used in the creation of this module.
+Single instances for some Frequencies
+
+Support for:
+* YEARLY, MONTHLY, WEEKLY and DAILY;
+* INTERVAL
+* COUNT
+
+eg.
+        FREQ=DAILY;INTERVAL=1;COUNT=10
+
+        FREQ=WEEKLY;INTERVAL=2;COUNT=10;BYDAY=SU,TU,WE,FR
+        FREQ=WEEKLY;COUNT=10;BYDAY=MO,SA,TH
+        FREQ=WEEKLY;INTERVAL=2;COUNT=10;BYDAY=MO
+        FREQ=WEEKLY;INTERVAL=2;COUNT=10;BYDAY=SU
+
+        FREQ=MONTHLY;BYMONTHDAY=31;COUNT=12
+        FREQ=MONTHLY;COUNT=8
+
+        FREQ=MONTHLY;INTERVAL=2;BYDAY=-1SA;COUNT=10
+        FREQ=MONTHLY;BYDAY=1MO;COUNT=10
+        FREQ=MONTHLY;BYDAY=2SA;COUNT=10
+        FREQ=MONTHLY;BYDAY=3TU;COUNT=10
+        FREQ=MONTHLY;BYDAY=4WE;COUNT=10
